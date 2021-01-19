@@ -10,6 +10,7 @@ li{
 }
 a {
     text-decoration: none;
+    color: rgb(46, 0, 0);
 }
 h1,h2{
     font-family: 'Hachi Maru Pop', cursive;
