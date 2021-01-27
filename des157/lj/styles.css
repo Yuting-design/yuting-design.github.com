@@ -63,6 +63,7 @@ main section {
 }
 
 main section article{
+    
     padding: 25px;
     border-style: solid;
     border-color: rgba(255, 250, 240, 0.581);
@@ -70,24 +71,37 @@ main section article{
 }
 
 /*colors---------------------------------*/
+/* one--------------------- */
 #one {
     background-color: #F9CDAD;
 }
 #one a {
     color: #fd5400;
 }
-
-/*-------------------*/
-#two {
-    background-color: #FC9D9A;
+#one a:hover{
+    color:#8aeec1;
 }
 
+/*two-------------------*/
+#two {
+    background-color: #a5d5bf;
+}
+#two a {
+    color: #008448;
+}
+#two a:hover{
+    color:#FE4365;
+}
 /*---------------------*/
 #three {
     background-color: #F9CDAD;
 }
-
-
+#three a:hover{
+    color:#FE4365;
+}
+#three a:hover{
+    color:#8aeec1;
+}
 /*----------------------*/
 #four {
     background-color: #a3d4be;
@@ -97,17 +111,6 @@ main section article{
 /*----------------------*/
 #five {
     background-color: #FC9D9A;
-}
-
-/*-----------------------*/
-#one a:hover{
-    color:#8aeec1;
-}
-#two a:hover{
-    color:#FE4365;
-}
-#three a:hover{
-    color:#8aeec1;
 }
 
 /*main end-------------------------------------------*/
