@@ -72,46 +72,28 @@ main section article{
 
 /*colors---------------------------------*/
 /* one--------------------- */
-#one {
+.red {
     background-color: #F9CDAD;
 }
-#one a {
+.red a {
     color: #fd5400;
 }
-#one a:hover{
+.red a:hover{
     color:#8aeec1;
 }
 
 /*two-------------------*/
-#two {
+.green {
     background-color: #a5d5bf;
 }
-#two a {
+.green a {
     color: #008448;
 }
-#two a:hover{
+.green a:hover{
     color:#FE4365;
-}
-/*---------------------*/
-#three {
-    background-color: #F9CDAD;
-}
-#three a:hover{
-    color:#FE4365;
-}
-#three a:hover{
-    color:#8aeec1;
-}
-/*----------------------*/
-#four {
-    background-color: #a3d4be;
 }
 
 
-/*----------------------*/
-#five {
-    background-color: #FC9D9A;
-}
 
 /*main end-------------------------------------------*/
 
