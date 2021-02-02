@@ -154,8 +154,11 @@ footer p{
     font-size: 14px;
     margin: 10px;
 }
+footer p a{
+    color: rgb(0,101,103);
+}
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     form {
         width: 40%;
     }
@@ -164,4 +167,4 @@ footer p{
     form {
         width: 60%;
     }
-}
+} */
