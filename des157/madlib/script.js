@@ -24,11 +24,11 @@
         } else if (noun1 && noun2 && adj && adv) {
             myText = 'Please give me a verb so I can make your Mad Lib!';
         } else if (noun1 && noun2 && verb && adv) {
-            myText = 'Please give me an adjective so I can make your Mad Lib!';
+            myText = 'Please give me an weather so I can make your Mad Lib!';
         } else if (noun1 && adj && verb && adv) {
-            myText = 'Please give me another noun so I can make your Mad Lib!';
+            myText = 'Please give me a place so I can make your Mad Lib!';
         } else if (noun2 && adj && verb && adv) {
-            myText = 'Please give me another noun so I can make your Mad Lib!';
+            myText = 'Please give me a name so I can make your Mad Lib!';
         } else {
             myText = 'Please give me words so I can make your Mad Lib!';
         }
