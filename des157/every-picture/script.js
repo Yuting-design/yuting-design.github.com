@@ -9,7 +9,7 @@
     const miller = "<h2>Miller</h2><p>Miller was the last doll I ever made. He was born in the winter of 2018. This was the first action doll I have sold. Although its popularity, I only made 20 due to my limited energy.</p>";
     const whity = "<h2>Whity</h2><p>I bought Whity from a flea market. He is the oldest. He was born in 2008. After some repairs and alterations, he became what he is now.</p>";
     const devil = "<h2>Devil</h2><p>Devil was a very beautiful child. Of course, it's expensive, too. Devil is the only adult size in the family. He was sold to a northern girl in 2019.</p>";
-    //articles end----------------------------------------
+    //articles end-------------------------------------------------------
 
     const navigater = document.querySelectorAll('.navigater');
     const imageContainer = document.querySelector('#image');
