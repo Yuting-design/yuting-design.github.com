@@ -50,7 +50,7 @@
 
     //check which article need to be show--------------------
     function showArticle(newClass){
-        console.log(newClass);
+        //console.log(newClass);
         if(newClass == 'Francis'){
             document.querySelector('article').innerHTML = francis;
         }else if(newClass == 'Fran'){
