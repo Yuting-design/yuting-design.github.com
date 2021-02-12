@@ -46,7 +46,7 @@
             case 'bottomright': theImg.className = 'bottomright'; break;
             case 'center': theImg.className = 'center'; break;
         }
-    }
+    }//zoom image end--------------------------------
 
     //check which article need to be show--------------------
     function showArticle(newClass){
