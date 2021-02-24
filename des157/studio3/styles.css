@@ -146,4 +146,6 @@ a {
 /* ------------------------- */
 .mysources{
     font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    padding:40px;
 }
