@@ -110,20 +110,13 @@ main nav section {
     background-color: #f6af7c;
 }
 /*-------------------*/
-#leftMiddle {
+
+#leftBottom {
     background-color: #FC9D9A;
 }
 
-#leftMiddle:hover {
-    background-color: #fc718b;
-}
-/*---------------------*/
-#leftBottom {
-    background-color: #F9CDAD;
-}
-
 #leftBottom:hover {
-    background-color: #f6af7c;
+    background-color: #fc718b;
 }
 /*----------------------*/
 #middle section {
@@ -131,7 +124,7 @@ main nav section {
 }
 
 #middle section:hover {
-    background-color: #83AF9B;
+    background-color: #72c8a1;
 }
 /*----------------------*/
 #right section {
