@@ -3,6 +3,7 @@
     const startGame = document.getElementById('startgame');
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('game');
+    const score = document.getElementById('score');
     const score1 = document.getElementById('score1');
     const score2 = document.getElementById('score2');
     const actionArea = document.getElementById('actions');
@@ -14,8 +15,8 @@
     const winSound = new Audio('media/Des157-3a.m4a');
 
     let gameData = {
-        dice: ['1die.jpg', '2die.jpg', '3die.jpg',
-            '4die.jpg', '5die.jpg', '6die.jpg'
+        dice: ['1die.png', '2die.png', '3die.png',
+            '4die.png', '5die.png', '6die.png'
         ],
         players: ['Paul', 'Grace'],
         score: [0, 0],

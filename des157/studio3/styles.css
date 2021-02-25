@@ -62,13 +62,16 @@ button:hover {
 
 /* win style set---------------------------------------------------------------------------- */
 #score h2 {
+    bottom:40px;
+    position: relative;
     text-align: center;
     font-size: 30px;
+    font-family: 'Sigmar One', cursive;
 }
 /* dice position------------------------------------  */
 #dice {
     position: absolute;
-    bottom: 340px;
+    bottom: 320px;
     left: 50%;
     transform: translate(-50%, 0);
 }
