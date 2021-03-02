@@ -136,11 +136,14 @@
             showCurrentScore();
         }
     }
+    //if player has 30+ points, show the winner celebrate function
     function winningCelebrate(){
         const winner =document.getElementById("winner");
+        const showWinner = document.getElementById("showWinner");
         winner.className = "overlay showing";
-        winner.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
-        winner.innerHTML += "<button id='playAgain'>Play Again</button>";
+        showWinner.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+        showWinner.innerHTML += `<img src="images/pig${gameData.index+1}.png">`;
+        showWinner.innerHTML += "<button id='playAgain'>Play Again</button>";
         document.getElementById("playAgain").addEventListener("click",function(){
             location.reload();
         });
