@@ -3,7 +3,7 @@
     const startGame = document.getElementById('startgame');
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('game');
-    const score = document.getElementById('score');
+    /* const score = document.getElementById('score'); */
     const score1 = document.getElementById('score1');
     const score2 = document.getElementById('score2');
     const actionArea = document.getElementById('actions');
@@ -17,10 +17,14 @@
     
 
     /* sounds------------------------------------ */
-    const oneSound = new Audio('media/Des157-3c.m4a');
-    const startSound = new Audio('media/Des157-3b.m4a');
-    const winSound = new Audio('media/Des157-3a.m4a');
-
+    const switchSound = new Audio('media/switch.m4a');
+    const startSound = new Audio('media/gamestart.m4a');
+    const winSound = new Audio('media/winning.m4a');
+    const buttonSound = new Audio('media/button.m4a');
+    const bgm = new Audio('media/bgm.m4a');
+    bgm.loop = true;
+    bgm.play();
+    /* bgm.pause(); */
     let gameData = {
         dice: ['1die.png', '2die.png', '3die.png',
             '4die.png', '5die.png', '6die.png'
@@ -35,25 +39,32 @@
     };
     start0.addEventListener("click", function(event){
         event.preventDefault();
+        buttonSound.play();
         startPage.className = "overlay hidden";
         checkRules.className = "overlay showing";
     });
     ok.addEventListener("click", function(event){
         event.preventDefault();
+        buttonSound.play();
+        
         checkRules.className = "overlay hidden";
         checkRules.style.backgroundColor = "red";
     });
 
     document.getElementById('quit').addEventListener("click", function () {
+        buttonSound.play();
         location.reload();
     });
 
     document.getElementById('openRules').addEventListener("click", function (event) {
         event.preventDefault();
+        buttonSound.play();
         checkRules.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
         checkRules.className = "overlay showing";
     });
     startGame.addEventListener("click", function () {
+        //bgm stop
+        bgm.pause();
         //sound play
         startSound.play();
         //move the quit button to corner
@@ -72,6 +83,7 @@
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML = '<button id = "roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click', function () {
+            buttonSound.play();
             console.log('roll the dice!');
             throwDice();
         });
@@ -89,7 +101,7 @@
         //if two 1
         if (gameData.rollSum === 2) {
             //sound play
-            oneSound.play();
+            switchSound.play();
             console.log("snake eyes were rolled");
             game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
             gameData.score[gameData.index] = 0;
@@ -102,11 +114,11 @@
         //if either dice is a 1
         else if (gameData.roll1 === 1 || gameData.roll2 === 1) {
             //sound play
-            oneSound.play();
+            switchSound.play();
             console.log("one of the two dice was a 1");
             gameData.index ? (gameData.index) = 0 : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 4000);
             showCurrentScore()
         }
         //if neither dice is a 1
@@ -115,9 +127,11 @@
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             actionArea.innerHTML = '<button id = "rollagain">Roll Again</button> <button id = "pass">Pass</button>';
             document.getElementById('rollagain').addEventListener('click', function () {
+                buttonSound.play();
                 throwDice();
             });
             document.getElementById('pass').addEventListener('click', function () {
+                buttonSound.play();
                 gameData.index ? (gameData.index) = 0 : (gameData.index = 1);
                 throwDice();
             });
@@ -147,6 +161,7 @@
         showWinner.innerHTML += `<img src="images/pig${gameData.index+1}.png">`;
         showWinner.innerHTML += "<button id='playAgain'>Play Again</button>";
         document.getElementById("playAgain").addEventListener("click",function(){
+            buttonSound.play();
             location.reload();
         });
 
@@ -159,6 +174,7 @@
     //user test--------------------------
     const userTest = document.getElementById("userTest");
     document.getElementById("userTaskCheck").addEventListener('click', function () {
+        buttonSound.play();
         userTest.className = "overlay hidden";
     });
 }());
