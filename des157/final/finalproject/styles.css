@@ -12,6 +12,7 @@ h1 {
     transform: translate(-50%, 0);
     text-align: center;
     font-size: 60px;
+    color: black;
 }
 
 div {
@@ -205,16 +206,24 @@ a {
 #startPage{
     background-color: rgb(226, 214, 193);
 }
-#startPage img{
-    position: absolute;
+#startPage h1{
+    margin: 0;
+    font-size: 72px;
+}
+#startPageImage{
+    width: 517px;
+    height: 480px;
+    padding: 0;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-38%);
 }
+
 #start0{
     text-align: center;
     border: 4px solid;
-    border-color: rgb(255, 91, 116) ;
+    border-color: rgb(255, 91, 116);
     background-color:rgb(255, 128, 129)  ;
     border-radius: 50%;
     line-height: 185px;
@@ -222,9 +231,9 @@ a {
     width: 258px;
     font-family: 'Sigmar One', cursive;
     font-size: 50px;
-    position: relative;
+    position: absolute;
+    top: 230px;
     left: 50%;
-    top:61.5%;
     transform: translate(-50%);
 }
 #start0:hover{

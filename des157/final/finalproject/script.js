@@ -167,10 +167,10 @@
             gameData.index ? (gameData.index) = 0 : (gameData.index = 1);
             //show the surrent score
             setTimeout(setUpTurn, 2000);
-            showCurrentScore()
+            showCurrentScore();
         }
         //if either dice is a 1
-        else if (gameData.roll1 === 1 || gameData.roll2 === 1) {
+        else if (gameData.roll1 === 1 || gameData.roll2 === 1) { 
             //sound play
             switchSound.play();
             console.log("one of the two dice was a 1");
