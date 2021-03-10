@@ -25,7 +25,7 @@ button {
     background-color: rgb(255, 91, 116);
     border-radius: 20px;
     position: absolute;
-    bottom: 150px;
+    bottom: /* 150px */20%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -55,7 +55,7 @@ button:hover {
 
 .pigs {
     position: absolute;
-    bottom: 130px;
+    bottom: 16%;
 }
 
 #score1,
@@ -63,18 +63,10 @@ button:hover {
     font-size: 65px;
 }
 
-/* win style set---------------------------------------------------------------------------- */
-#score h2 {
-    bottom:50px;
-    position: relative;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Sigmar One', cursive;
-}
 /* dice position------------------------------------  */
 #dice {
     position: absolute;
-    bottom: 300px;
+    bottom: 42%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -89,7 +81,7 @@ button:hover {
     width: 300px;
     padding: 0px;
     position: absolute;
-    bottom: 230px;
+    bottom: /* 230px */33%;
     left: 50%;
     transform: translate(-50%, 0);
 }
