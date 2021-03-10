@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    top:8%;
+    top: 6%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -55,7 +55,7 @@ button:hover {
 
 .pigs {
     position: absolute;
-    bottom: 16%;
+    bottom: 18%;
 }
 
 #score1,
@@ -66,7 +66,7 @@ button:hover {
 /* dice position------------------------------------  */
 #dice {
     position: absolute;
-    bottom: 42%;
+    bottom: 40%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -81,7 +81,7 @@ button:hover {
     width: 300px;
     padding: 0px;
     position: absolute;
-    bottom: /* 230px */33%;
+    bottom: /* 230px */32%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -199,8 +199,20 @@ a {
     background-color: rgb(226, 214, 193);
 }
 #startPage h1{
-    margin: 0;
-    font-size: 72px;
+    color: rgb(255, 61, 78);
+    margin-top: 2%;
+    font-size: 100px;
+}
+#startPage h1:first-child{
+    color: rgb(37, 33, 33);
+    margin-top: 2.5%;
+}
+#startPage>img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    /* transform: translate(-50%); */
+    transform: translate(360px);
 }
 #startPageImage{
     width: 517px;
